@@ -15,6 +15,7 @@
 		113AACC124D7463C000130E6 /* Montserrat-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 113AACB924D7463B000130E6 /* Montserrat-Black.ttf */; };
 		113AACC224D7463C000130E6 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 113AACBA24D7463C000130E6 /* Montserrat-Regular.ttf */; };
 		113AACC324D7463C000130E6 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 113AACBB24D7463C000130E6 /* Montserrat-Bold.ttf */; };
+		1142821724D85F0F00596CD4 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1142821624D85F0F00596CD4 /* RoundedButton.swift */; };
 		11E3328D24D7268300E79EA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E3328C24D7268300E79EA3 /* AppDelegate.swift */; };
 		11E3328F24D7268300E79EA3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E3328E24D7268300E79EA3 /* SceneDelegate.swift */; };
 		11E3329124D7268300E79EA3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E3329024D7268300E79EA3 /* ViewController.swift */; };
@@ -33,6 +34,7 @@
 		113AACB924D7463B000130E6 /* Montserrat-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Black.ttf"; sourceTree = "<group>"; };
 		113AACBA24D7463C000130E6 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 		113AACBB24D7463C000130E6 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		1142821624D85F0F00596CD4 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		11E3328924D7268300E79EA3 /* Exp_01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Exp_01.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11E3328C24D7268300E79EA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11E3328E24D7268300E79EA3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				11E3329524D7268700E79EA3 /* Assets.xcassets */,
 				11E3329724D7268700E79EA3 /* LaunchScreen.storyboard */,
 				11E3329A24D7268700E79EA3 /* Info.plist */,
+				1142821624D85F0F00596CD4 /* RoundedButton.swift */,
 			);
 			path = Exp_01;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 				11E3329124D7268300E79EA3 /* ViewController.swift in Sources */,
 				11E3328D24D7268300E79EA3 /* AppDelegate.swift in Sources */,
 				11E3328F24D7268300E79EA3 /* SceneDelegate.swift in Sources */,
+				1142821724D85F0F00596CD4 /* RoundedButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

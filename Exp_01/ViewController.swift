@@ -15,13 +15,29 @@ class ViewController: UIViewController {
     @IBOutlet weak var animalName: UILabel!
     @IBOutlet weak var btnRandomize: UIButton!
     @IBOutlet weak var mainArea: UIStackView!
+
+    @IBOutlet weak var header: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         avatar.image = #imageLiteral(resourceName: "Avatar_only_Square_Circle_Transp")
+        
+        
+//        UIGraphicsBeginImageContext(self.view.frame.size);
+//        [[UIImage imageNamed:@"Bg_gradient3.jpg"] drawInRect:self.view.bounds];
+//        UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+//        UIGraphicsEndImageContext();
+//
+//        self.view.backgroundColor = [UIColor colorWithPatternImage:image];
+        
+        
+        header.backgroundColor = #colorLiteral(red: 0.9372549057, green: 0.3490196168, blue: 0.1921568662, alpha: 1)
     }
-
+    
+    
+    
+    
 //    override func viewDidAppear(_ animated: Bool) {
 //        let storyboard = UIStoryboard(name: "LoginStoryboard", bundle: nil)
 //        let controller = storyboard.instantiateViewController(withIdentifier: "loginVC")
