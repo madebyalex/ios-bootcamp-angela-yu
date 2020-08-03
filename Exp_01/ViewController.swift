@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        avatar.image = #imageLiteral(resourceName: "Avatar_only_Square_Circle_Transp")
+//        avatar.image = #imageLiteral(resourceName: "Avatar_only_Square_Circle_Transp")
         
         
 //        UIGraphicsBeginImageContext(self.view.frame.size);
@@ -35,9 +35,7 @@ class ViewController: UIViewController {
         header.backgroundColor = #colorLiteral(red: 0.9372549057, green: 0.3490196168, blue: 0.1921568662, alpha: 1)
     }
     
-    
-    
-    
+
 //    override func viewDidAppear(_ animated: Bool) {
 //        let storyboard = UIStoryboard(name: "LoginStoryboard", bundle: nil)
 //        let controller = storyboard.instantiateViewController(withIdentifier: "loginVC")
@@ -49,11 +47,15 @@ class ViewController: UIViewController {
         // print("Button got tapped!");
         
         // Replace the avatar with some random picture
-        let arrPictures = ["bear", "bee", "chicken", "cow", "crab", "deer", "dog", "fish", "ladybug", "octopus", "owl", "panda", "parrot", "penguin", "pig", "rabbit", "shark", "shrimp", "spider", "turtle"]
+        let arrPictures = ["bat", "bear", "bee", "bug", "butterfly", "chicken", "cow", "crab", "deer", "dog", "fish", "horse", "jellyfish", "ladybug", "lobster", "octopus", "owl", "panda", "parrot", "penguin", "pig", "rabbit", "shark", "sheep", "shrimp", "sloth", "snake", "spider", "turtle", "wolf"]
+        
+        let dictPictures = ["bat": "Летучая мышь", "bear": "Медведь", "bee": "Пчела", "bug": "Жук", "butterfly": "Бабочка", "chicken": "Курица", "cow": "Корова", "crab": "Краб", "deer": "Олень", "dog": "Собака", "fish": "Рыба", "horse": "Лошадь", "jellyfish": "Медуза", "ladybug": "Божья коровка", "lobster": "Лобстер", "octopus": "Осьминог", "owl": "Сова", "panda": "Панда", "parrot": "Попугай", "penguin": "Пингвин", "pig": "Свинья", "rabbit": "Кролик", "shark": "Акула", "sheep": "Овца", "shrimp": "Креветка", "sloth": "Ленивец", "snake": "Змея", "spider": "Паук", "turtle": "Черепаха", "wolf": "Волк"]
+        
+        let randomPic = arrPictures.randomElement()!
 
 //        let randomPic = arrPictures.randomElement()!
 //        let randomPic = arrPictures[Int.random(in: 0...arrPictures.count - 1)]
-        let randomPic = arrPictures[Int.random(in: 0..<arrPictures.count)]
+//        let randomPic = arrPictures[Int.random(in: 0..<arrPictures.count)]
         avatar.image = UIImage(named: randomPic)
         
         // Generate random fav number
@@ -70,6 +72,9 @@ class ViewController: UIViewController {
         // Change text of the Randomize button
         btnRandomize.setTitle("SHOW ANOTHER", for: .normal)
         
+        let randomItemDict = dictPictures.randomElement()!
+        avatar.image = UIImage(named: randomItemDict.key)
+        animalName.text = randomItemDict.value
     }
     
 
