@@ -10,6 +10,9 @@
         <array key="Montserrat-Bold.ttf">
             <string>Montserrat-Bold</string>
         </array>
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
     </customFonts>
     <scenes>
         <!--View Controller-->
@@ -20,18 +23,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="mR3-pu-vCV">
-                                <rect key="frame" x="80" y="319" width="254" height="258"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="mR3-pu-vCV" userLabel="mainArea">
+                                <rect key="frame" x="20" y="301" width="374" height="294.5"/>
                                 <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Animal name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="utA-c5-gOf" userLabel="animalName">
+                                        <rect key="frame" x="20" y="0.0" width="334" height="46.5"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="38"/>
+                                        <color key="textColor" red="0.50196078431372548" green="0.5490196078431373" blue="0.61568627450980395" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NuokaBox_avatar2" translatesAutoresizingMaskIntoConstraints="NO" id="uSQ-3h-35Y" userLabel="Avatar">
-                                        <rect key="frame" x="79" y="0.0" width="96" height="96"/>
+                                        <rect key="frame" x="139" y="94.5" width="96" height="96"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="96" id="52C-fE-fcc"/>
                                             <constraint firstAttribute="width" constant="96" id="CdR-eA-GJz"/>
                                         </constraints>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="2AG-qF-1P0">
-                                        <rect key="frame" x="7" y="136" width="240" height="56"/>
+                                        <rect key="frame" x="67" y="238.5" width="240" height="56"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Xd-pG-gyO" userLabel="btnWelcome">
                                                 <rect key="frame" x="0.0" y="0.0" width="240" height="56"/>
@@ -41,7 +50,7 @@
                                                     <constraint firstAttribute="height" constant="56" id="ZLs-Ej-bZ2"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="18"/>
-                                                <state key="normal" title="RANDOMIZE">
+                                                <state key="normal" title="SHOW ANIMAL">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -53,38 +62,65 @@
                                             <constraint firstItem="1Xd-pG-gyO" firstAttribute="centerX" secondItem="2AG-qF-1P0" secondAttribute="centerX" id="GD4-Va-yjc"/>
                                         </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" alpha="0.0" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="j17-jd-qJd" userLabel="wrap-favnumber">
-                                        <rect key="frame" x="8.5" y="232" width="237" height="26"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your favourite number is:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iPX-Nq-z1Z">
-                                                <rect key="frame" x="0.0" y="0.0" width="217.5" height="26"/>
-                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="19"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wFd-s0-zj8" userLabel="favNumber">
-                                                <rect key="frame" x="225.5" y="0.0" width="11.5" height="26"/>
-                                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="19"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="utA-c5-gOf" secondAttribute="trailing" constant="20" id="Kxe-a0-9QM"/>
+                                    <constraint firstItem="utA-c5-gOf" firstAttribute="leading" secondItem="mR3-pu-vCV" secondAttribute="leading" constant="20" id="W4V-az-tp6"/>
+                                </constraints>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Master Card" translatesAutoresizingMaskIntoConstraints="NO" id="3Mb-Xi-Aep">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="104"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="104" id="u49-ga-CcK"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Random animal app" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qZY-pu-hfr">
+                                <rect key="frame" x="20" y="54" width="374" height="28.5"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" alpha="0.0" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="j17-jd-qJd" userLabel="wrap-favnumber">
+                                <rect key="frame" x="88.5" y="816" width="237" height="26"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your favourite number is:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iPX-Nq-z1Z">
+                                        <rect key="frame" x="0.0" y="0.0" width="217.5" height="26"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="19"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wFd-s0-zj8" userLabel="favNumber">
+                                        <rect key="frame" x="225.5" y="0.0" width="11.5" height="26"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="19"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="mR3-pu-vCV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6OF-ce-zVh"/>
-                            <constraint firstItem="mR3-pu-vCV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="9xP-8c-rRQ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mR3-pu-vCV" secondAttribute="trailing" constant="80" id="fAF-p4-f00"/>
-                            <constraint firstItem="mR3-pu-vCV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wH7-Uy-x1M"/>
+                            <constraint firstItem="mR3-pu-vCV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="9xP-8c-rRQ"/>
+                            <constraint firstItem="3Mb-Xi-Aep" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="HFT-Aa-swh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="j17-jd-qJd" secondAttribute="bottom" constant="20" id="ObS-Lz-FaG"/>
+                            <constraint firstItem="qZY-pu-hfr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="QPd-3L-10w"/>
+                            <constraint firstItem="j17-jd-qJd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="W6p-Z1-fJN"/>
+                            <constraint firstItem="qZY-pu-hfr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cUo-8W-iDH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mR3-pu-vCV" secondAttribute="trailing" constant="20" id="fAF-p4-f00"/>
+                            <constraint firstItem="qZY-pu-hfr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="hi1-aY-W7o"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qZY-pu-hfr" secondAttribute="trailing" constant="20" id="ojE-IF-vyt"/>
+                            <constraint firstItem="3Mb-Xi-Aep" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="sCT-vu-XOM"/>
+                            <constraint firstItem="3Mb-Xi-Aep" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="zhF-Fy-4S1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="animalName" destination="utA-c5-gOf" id="ggf-IG-z6C"/>
                         <outlet property="avatar" destination="uSQ-3h-35Y" id="lfn-RU-HfK"/>
+                        <outlet property="btnRandomize" destination="1Xd-pG-gyO" id="doL-Dr-nDe"/>
                         <outlet property="favNumber" destination="wFd-s0-zj8" id="Qa2-US-XPk"/>
+                        <outlet property="mainArea" destination="mR3-pu-vCV" id="2Of-Ze-beh"/>
                         <outlet property="wrapFavNumber" destination="j17-jd-qJd" id="Ujv-eg-y29"/>
                     </connections>
                 </viewController>
@@ -94,6 +130,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Master Card" width="1280" height="540"/>
         <image name="NuokaBox_avatar2" width="400" height="400"/>
     </resources>
 </document>

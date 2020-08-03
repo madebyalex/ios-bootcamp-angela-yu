@@ -12,6 +12,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var avatar: UIImageView!
     @IBOutlet weak var favNumber: UILabel!
     @IBOutlet weak var wrapFavNumber: UIStackView!
+    @IBOutlet weak var animalName: UILabel!
+    @IBOutlet weak var btnRandomize: UIButton!
+    @IBOutlet weak var mainArea: UIStackView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,11 +28,12 @@ class ViewController: UIViewController {
 //        present(controller, animated: true, completion: nil)
 //    }
     
+    
     @IBAction func showRandomImage(_ sender: UIButton) {
         // print("Button got tapped!");
         
         // Replace the avatar with some random picture
-        let arrPictures = ["bear-2", "bee", "chicken-2", "cow", "crab", "deer", "dog", "fish", "fishbone", "ladybug", "octopus", "owl", "panda", "parrot", "penguin", "pig-2", "rabbit", "shark-2", "shrimp", "spider", "turtle"]
+        let arrPictures = ["bear", "bee", "chicken", "cow", "crab", "deer", "dog", "fish", "ladybug", "octopus", "owl", "panda", "parrot", "penguin", "pig", "rabbit", "shark", "shrimp", "spider", "turtle"]
 
 //        let randomPic = arrPictures.randomElement()!
 //        let randomPic = arrPictures[Int.random(in: 0...arrPictures.count - 1)]
@@ -42,6 +46,14 @@ class ViewController: UIViewController {
         
         // Unhide the favnumber block
         wrapFavNumber.alpha = 1
+        
+        // Show the animal name
+        animalName.alpha = 0.9
+        animalName.text = randomPic
+        
+        // Change text of the Randomize button
+        btnRandomize.setTitle("SHOW ANOTHER", for: .normal)
+        
     }
     
 
