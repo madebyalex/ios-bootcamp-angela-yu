@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="ipad12_9" orientation="landscape" layout="fullscreen" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -20,27 +20,30 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Exp_01" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="mR3-pu-vCV" userLabel="mainArea">
-                                <rect key="frame" x="20" y="301" width="374" height="294.5"/>
+                                <rect key="frame" x="20" y="356.5" width="1326" height="311.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Animal name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="utA-c5-gOf" userLabel="animalName">
-                                        <rect key="frame" x="20" y="0.0" width="334" height="46.5"/>
+                                        <rect key="frame" x="20" y="0.0" width="1286" height="63.5"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="38"/>
                                         <color key="textColor" red="0.50196078431372548" green="0.5490196078431373" blue="0.61568627450980395" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="52"/>
+                                        </variation>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Avatar_only_Square_Circle_Transp" translatesAutoresizingMaskIntoConstraints="NO" id="uSQ-3h-35Y" userLabel="Avatar">
-                                        <rect key="frame" x="139" y="94.5" width="96" height="96"/>
+                                        <rect key="frame" x="615" y="111.5" width="96" height="96"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="96" id="52C-fE-fcc"/>
                                             <constraint firstAttribute="width" constant="96" id="CdR-eA-GJz"/>
                                         </constraints>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="2AG-qF-1P0">
-                                        <rect key="frame" x="67" y="238.5" width="240" height="56"/>
+                                        <rect key="frame" x="543" y="255.5" width="240" height="56"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Xd-pG-gyO" userLabel="btnWelcome" customClass="RoundedButton" customModule="Exp_01" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="240" height="56"/>
@@ -68,31 +71,30 @@
                                 </constraints>
                                 <variation key="heightClass=compact" spacing="28"/>
                             </stackView>
-                            <stackView opaque="NO" alpha="0.0" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="j17-jd-qJd" userLabel="wrap-favnumber">
-                                <rect key="frame" x="88.5" y="824" width="237" height="26"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="j17-jd-qJd" userLabel="footer">
+                                <rect key="frame" x="593" y="960" width="180" height="44"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your favourite number is:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iPX-Nq-z1Z">
-                                        <rect key="frame" x="0.0" y="0.0" width="217.5" height="26"/>
-                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="19"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wFd-s0-zj8" userLabel="favNumber">
-                                        <rect key="frame" x="225.5" y="0.0" width="11.5" height="26"/>
-                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="19"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="zMa-a1-LXu" userLabel="switchLanguage">
+                                        <rect key="frame" x="0.0" y="0.0" width="180" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="180" id="Hae-kt-Cd3"/>
+                                            <constraint firstAttribute="height" constant="44" id="Tik-UY-a1u"/>
+                                        </constraints>
+                                        <segments>
+                                            <segment title="English"/>
+                                            <segment title="Русский"/>
+                                        </segments>
+                                    </segmentedControl>
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lXJ-ue-QW9" userLabel="header">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="104"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1366" height="104"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bg_gradient2" translatesAutoresizingMaskIntoConstraints="NO" id="wOv-F3-jxc">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="104"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="1366" height="104"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Random animal app" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qZY-pu-hfr" userLabel="mainTitle">
-                                        <rect key="frame" x="89" y="51.5" width="236.5" height="28.5"/>
+                                        <rect key="frame" x="565" y="51.5" width="236.5" height="28.5"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="23"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -119,8 +121,8 @@
                             <constraint firstItem="lXJ-ue-QW9" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="0QV-h6-fey"/>
                             <constraint firstItem="mR3-pu-vCV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6OF-ce-zVh"/>
                             <constraint firstItem="mR3-pu-vCV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="9xP-8c-rRQ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="j17-jd-qJd" secondAttribute="bottom" constant="12" id="ObS-Lz-FaG">
-                                <variation key="heightClass=compact" constant="10"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="j17-jd-qJd" secondAttribute="bottom" constant="20" id="ObS-Lz-FaG">
+                                <variation key="heightClass=compact" constant="16"/>
                             </constraint>
                             <constraint firstItem="j17-jd-qJd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="W6p-Z1-fJN"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mR3-pu-vCV" secondAttribute="trailing" constant="20" id="fAF-p4-f00"/>
@@ -133,10 +135,9 @@
                         <outlet property="animalName" destination="utA-c5-gOf" id="ggf-IG-z6C"/>
                         <outlet property="avatar" destination="uSQ-3h-35Y" id="lfn-RU-HfK"/>
                         <outlet property="btnRandomize" destination="1Xd-pG-gyO" id="doL-Dr-nDe"/>
-                        <outlet property="favNumber" destination="wFd-s0-zj8" id="Qa2-US-XPk"/>
+                        <outlet property="footer" destination="j17-jd-qJd" id="gcc-mw-FOg"/>
                         <outlet property="header" destination="lXJ-ue-QW9" id="G5E-3U-ETs"/>
                         <outlet property="mainArea" destination="mR3-pu-vCV" id="2Of-Ze-beh"/>
-                        <outlet property="wrapFavNumber" destination="j17-jd-qJd" id="Ujv-eg-y29"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
