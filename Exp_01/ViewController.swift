@@ -31,7 +31,9 @@ class ViewController: UIViewController {
         // Replace the avatar with some random picture
         let arrPictures = ["bear-2", "bee", "chicken-2", "cow", "crab", "deer", "dog", "fish", "fishbone", "ladybug", "octopus", "owl", "panda", "parrot", "penguin", "pig-2", "rabbit", "shark-2", "shrimp", "spider", "turtle"]
 
-        let randomPic = arrPictures.randomElement()!
+//        let randomPic = arrPictures.randomElement()!
+//        let randomPic = arrPictures[Int.random(in: 0...arrPictures.count - 1)]
+        let randomPic = arrPictures[Int.random(in: 0..<arrPictures.count)]
         avatar.image = UIImage(named: randomPic)
         
         // Generate random fav number
